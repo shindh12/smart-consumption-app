@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#318de9</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FFB822</color>
+
+    <color name="bottom_btn_color">#318de9</color>
+    <color name="horizontal_line_color">#eef1f5</color>
+    <color name="horizontal_line_light_color">#f6f8fa</color>
+
+    <color name="bank_tab_focus_color">#318de9</color>
+    <color name="bank_tab_unfocus_color">#999999</color>
+
+    <color name="action_bar_text_color">#222222</color>
+    <color name="action_bar_background">#ffffff</color>
+
+    <color name="common_text_color">#111111</color>
+
+    <!--  Login-->
+    <color name="colorMainApp">#318de9</color>
+    <color name="colorAppWhite">#e6ffffff</color>
+    <color name="colorAppHint">#4dffffff</color>
+    <color name="colorLogInButtonClicked">#33ffffff</color>
+    <color name="colorAppSelected">#0b72d8</color>
+
+    <!-- Common -->
+    <color name="tab_focus_color">#318de9</color>
+    <color name="tab_unfocus_color">#999999</color>
+    <color name="layout_divider">#cccccc</color>
+    <color name="point_text">#999999</color>
+    <color name="point_point">#222222</color>
+    <color name="bank_account_title">#666666</color>
+    <color name="bank_new_account">#333333</color>
+    <color name="principle_backgound">#f6f8fa</color>
+    <color name="app_background">#ffffff</color>
+    <color name="used_color">#318de9</color>
+    <color name="unused_color">#999999</color>
+
+    <!--  analysis  -->
+    <color name="ac_used_color">#FFB822</color>
+    <color name="ac_unused_color">#F5F5F5</color>
+    <color name="ac_chart_card_background">#121624</color>
+    <color name="ac_chart_text_color">#C2C7E1</color>
+    <color name="ac_chart_credit_color">#5C78FF</color>
+    <color name="ac_chart_cash_color">#FD387A</color>
+
+
+
+    <!-- SignUp-->
+    <color name="SignUpButtonText">#a5a5a5</color>
+    <color name="SignUpButtonBackground">#eaeaea</color>
+    <color name="SignUpButtonTextBlack">#333333</color>
+    <color name="SignUpButtonTextBlue">#2a96fd</color>
+
+    <!--  Popup-->
+    <color name="color_title_text_color">#ff222222</color>
+    <color name="color_contents_text_color">#ff767676</color>
+    <color name="color_normal_button_text_color">#ff318de9</color>
+    <color name="color_disable_button_text_color">#fff2f2f2</color>
+    <color name="color_background_color">#ffffffff</color>
+    <color name="color_normal_button_color">#ff318de9</color>
+    <color name="color_disable_button_color">#fff2f2f2</color>
+
+</resources>

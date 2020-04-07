@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_consumption">
+
+    <fragment
+        android:id="@+id/navigation_consumption"
+        android:name="com.ysj.sc.layout.fragment.ConsumptionFragment"
+        android:label="@string/menu_consumption"
+        tools:layout="@layout/fragment_consumption" />
+
+    <fragment
+        android:id="@+id/navigation_analysis"
+        android:name="com.ysj.sc.layout.fragment.AnalysisFragment"
+        android:label="@string/menu_analysis"
+        tools:layout="@layout/fragment_analysis" />
+
+
+    <fragment
+        android:id="@+id/navigation_category"
+        android:name="com.ysj.sc.layout.fragment.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.ysj.sc.layout.fragment.DetailFragment"
+        tools:layout="@layout/fragment_consumption_detail" />
+
+</navigation>

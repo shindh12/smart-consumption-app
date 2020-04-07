@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_left_margin"
+            android:layout_marginRight="@dimen/activity_right_margin"
+            android:orientation="vertical">
+            <!--  Total Comsumption -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Consumption"
+                    android:textColor="@color/common_text_color"
+                    android:textSize="@dimen/cc_big_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_text_gap"
+                    android:text="Analysis"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/cc_big_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--   Analysis  -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ac_analysis_card_height"
+                android:layout_marginTop="@dimen/cardview_default_margin"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/common_text_gap">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- Card Header -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="소비 종합 평가"
+                        android:textSize="@dimen/ac_analysis_big_text_size"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv_month"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="Last "/>
+                    <TextView
+                        android:id="@+id/tv_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/months"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="3"/>
+                    <TextView
+                        android:id="@+id/months"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text=" Months"/>
+                </RelativeLayout>
+                <!-- Card Body -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/ac_grade_text_size"
+                            android:text="C"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/small_text_size"
+                            android:textColor="@color/colorAccent"
+                            android:text="(카드 소비 분배 일치율 60% 이하)"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_text_gap"
+                            android:textSize="@dimen/common_text_size"
+                            android:gravity="center"
+                            android:text="월 신용카드 사용액 : 112"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/common_text_gap"
+                            android:textSize="@dimen/common_text_size"
+                            android:gravity="center"
+                            android:text="추천 신용카드 사용액 : 80"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <com.ysj.sc.layout.view.RatioBarView
+                        android:id="@+id/chart_score"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:foregroundColor="@color/ac_used_color"
+                        app:strokeWidth="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--  Monthly Chart Card  -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ac_chart_card_height"
+                android:layout_marginTop="@dimen/cardview_default_margin"
+                app:cardBackgroundColor="@color/ac_chart_card_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/common_text_gap">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/analysis_chart_title"
+                        android:textSize="@dimen/ac_analysis_big_text_size"
+                        android:textColor="@color/ac_chart_text_color"
+                        />
+                    <com.github.mikephil.charting.charts.CombinedChart
+                        android:id="@+id/chart_monthly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--  Recommend Card  -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ac_recomend_card_height"
+                android:layout_marginTop="@dimen/cardview_default_margin"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/common_text_gap">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/common_text_gap">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="추천 소비 분배"
+                    android:textSize="@dimen/ac_analysis_big_text_size"
+                    android:textStyle="bold"/>
+                <include
+                    android:id="@+id/include_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/include_table"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</layout>

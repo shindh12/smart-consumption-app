@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/card_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현대카드ZERO"
+        android:textSize="@dimen/common_text_size"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/small_text_gap"/>
+
+    <com.ysj.sc.layout.view.UsedBarView
+        android:id="@+id/used_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/category_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용금액"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/small_text_gap"/>
+
+        <TextView
+            android:id="@+id/category_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="300,000"
+            android:textSize="@dimen/small_text_size"
+            android:layout_toRightOf="@+id/category_amount_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최대금액"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/max_amount"
+            android:layout_marginRight="@dimen/small_text_gap"/>
+
+        <TextView
+            android:id="@+id/max_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300,000"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

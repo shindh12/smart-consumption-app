@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">YSJ</string>
+
+    <string name="menu_consumption">현황</string>
+    <string name="menu_analysis">추천</string>
+    <string name="menu_category">분류</string>
+
+    <string name="analysis_total_title">소비 종합 평가</string>
+    <string name="analysis_total_used">월 신용카드 사용액 : </string>
+    <string name="analysis_total_recommend">추천 신용카드 사용액 : </string>
+
+    <string name="analysis_chart_title">월별 소비액 차트</string>
+    <string name="analysis_recommend_title">추천 소비 분배</string>
+    <string name="analysis_recommend_column1">신용카드</string>
+    <string name="analysis_recommend_column2">체크/현금</string>
+    <string name="analysis_recommend_row1">현재</string>
+    <string name="analysis_recommend_row2">추천상한</string>
+    <string name="analysis_recommend_row_desc">월 평균소비액</string>
+</resources>
